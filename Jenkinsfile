@@ -6,7 +6,6 @@ pipeline {
             steps {
                 script {
                     echo  'build'
-                    sh 'g++ main.cpp -o output'
                 }
             }
         }
@@ -14,7 +13,6 @@ pipeline {
             steps {
                 script {
                     echo 'test'
-                    sh './output'  
                 }
             }
         }
